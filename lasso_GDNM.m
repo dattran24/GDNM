@@ -39,7 +39,7 @@ function x=lasso_GDNM(A,b,y,mu)
         [prox_y,zeros_index]=prox_of_function(gamma,y,mu);
         grad=Q*y-prox_y+c;
     end
-    %% Find dk, tk, gradient at y
+    %% Find dk, tk at y
     function dk=finding_dk(A,b,gamma,mu,y)
         grad=finding_gradient(A,b,gamma,mu,y);
         [prox_y,zeros_index]=prox_of_function(gamma,y,mu);
@@ -57,7 +57,7 @@ function x=lasso_GDNM(A,b,y,mu)
             tau=tau/2;
         end
     end
-    %% Start function
+    %% Start iterating
     iter=0;
     %while norm(finding_gradient(A,b,gamma,mu,y))>1e-10
     while iter<100
