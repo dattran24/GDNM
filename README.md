@@ -1,5 +1,4 @@
-# GDNM
-## Generalized Damped Newton Method for solving Lasso
+# Generalized Damped Newton Method for solving Lasso - GDNM
 
 ### In this document, we propose a new algorithm for solving Lasso regession, i. e. the optimization problem of the form
 
