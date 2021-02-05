@@ -90,7 +90,7 @@ end
 ```
 ### The entire code can be found in file GDNM.m
 
-### Let us do a simple example, based on [[kmp20]]{https://arxiv.org/abs/2009.10551} for illustration. In this example, we choose 
+### Let us do a simple example from [[kmp20]](https://arxiv.org/abs/2009.10551) for illustration. In this example, we choose 
 ![image](https://user-images.githubusercontent.com/69850027/107070744-b6e0f300-67b1-11eb-8ab7-5f10f9a7eaa0.png)
 ### The implementations for this are as follows
  ```rb
