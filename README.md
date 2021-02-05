@@ -89,4 +89,4 @@ function x=lasso_GDNM(A,b,mu)
     x=Q*y+c;
 end
 ```
-### The whole code can be found in file GDNM.m
+### The entire code can be found in file GDNM.m
