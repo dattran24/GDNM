@@ -3,7 +3,7 @@
 ### In this document, we propose a new algorithm for solving Lasso regession based on our work [kmpt21]. The Lasso problem is the optimization problem of the form
 ![image](https://user-images.githubusercontent.com/69850027/107066957-9e220e80-67ac-11eb-949e-1e166d81b13c.png)
 ![image](https://user-images.githubusercontent.com/69850027/107067479-55b72080-67ad-11eb-937e-1a5d55cee152.png)
-![image](https://user-images.githubusercontent.com/69850027/107067681-a3338d80-67ad-11eb-8761-4a20e1b4aec7.png)
+![image](https://user-images.githubusercontent.com/69850027/107069450-fdcde900-67af-11eb-9973-f809b5c94dfc.png)
 ### The Matlab code for this algorithm can be found in the file GDNM.m or below.
 ### Input 
 ```rb
