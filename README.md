@@ -3,14 +3,8 @@
 ### In this document, we propose a new algorithm for solving Lasso regession, i. e. the optimization problem of the form
 
 ![image](https://user-images.githubusercontent.com/69850027/107066957-9e220e80-67ac-11eb-949e-1e166d81b13c.png)
-
 ![image](https://user-images.githubusercontent.com/69850027/107067479-55b72080-67ad-11eb-937e-1a5d55cee152.png)
-
-
-
 ![image](https://user-images.githubusercontent.com/69850027/107067345-27394580-67ad-11eb-960b-8b43611a2d8b.png)
-
-
 ### The Matlab code for this algorithm can be found in the file GDNM.m or below.
 ### Input 
 ```rb
@@ -45,7 +39,7 @@ function x=lasso_GDNM(A,b,mu)
     %% Calulate c
     c=-gamma*Q*transpose(A)*b;
 ```
-### Calculate value of Lasso function, value of function phi and its gradient
+### Calculate value of Lasso function, value of function phi (1) and its gradient (2)
 ```rb    
     function value=value_of_function(A,b,mu,x)
         value=0.5*norm(A*x-b)^2+mu*norm(x,1);
