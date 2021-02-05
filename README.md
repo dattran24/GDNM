@@ -84,7 +84,6 @@ function x=lasso_GDNM(A,b,mu)
  ```rb
     y=zeros(length(c),1);
     iter=0;
-    %while norm(finding_gradient(A,b,gamma,mu,y))>1e-10
     while iter<100
         y=y+finding_tk(A,b,gamma,mu,y)*finding_dk(A,b,gamma,mu,y);
         iter=iter+1
