@@ -1,7 +1,6 @@
 # Generalized Damped Newton Method for solving Lasso - GDNM
 
-### In this document, we propose a new algorithm for solving Lasso regession, i. e. the optimization problem of the form
-
+### In this document, we propose a new algorithm for solving Lasso regession based on our work [kmpt21]. The Lasso problem is the optimization problem of the form
 ![image](https://user-images.githubusercontent.com/69850027/107066957-9e220e80-67ac-11eb-949e-1e166d81b13c.png)
 ![image](https://user-images.githubusercontent.com/69850027/107067479-55b72080-67ad-11eb-937e-1a5d55cee152.png)
 ![image](https://user-images.githubusercontent.com/69850027/107067681-a3338d80-67ad-11eb-8761-4a20e1b4aec7.png)
@@ -91,5 +90,5 @@ end
 ```
 ### The entire code can be found in file GDNM.m
 
-## Reference
+## References
 ### [kmpt21] Khanh, P. D., Mordukhovich, B. S., Phat, V. T., Tran, D. B.: Generalized Damped Newton Algorithms in Nonsmooth Optimization with Applications to Lasso Problems, submitted, https://arxiv.org/abs/2101.10555 
