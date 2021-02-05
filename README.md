@@ -11,13 +11,17 @@
 ![h4](https://user-images.githubusercontent.com/69850027/106019826-142dc380-6091-11eb-9c64-55764e3bf446.png)
 
 ### The Matlab code for this algorithm can be found in the file GDNM.m or below.
+### Input 
 ```rb
-
 function x=lasso_GDNM(A,b,mu)
-    %% Find gamma 
+```
+### Find eigen value and gamma.
+```rb
     ATA=A'*A;
     gamma=0.5/eigs(ATA,1);
-    %% Calculate Prox(y)
+```
+## Calculate Proximal mapping
+```rb
     function [value,zeros_index]=prox_of_function(gamma,y,mu)
         value=[];
         zeros_index=[];
@@ -32,15 +36,16 @@ function x=lasso_GDNM(A,b,mu)
             end
         end
     end   
-    %% Calculate Q, P
+ ```
+ ### Calculate matrices Q, P, and vector c
+```rb
     Q=inv(eye(size(ATA))-gamma*ATA);
     P=Q-eye(size(Q));
-    %% In some cases, we need to use Tikonov Regularization
-    %P=P+eye(size(P))*10^(-10);
-    %Q=Q+eye(size(Q))*10^(-10);
     %% Calulate c
     c=-gamma*Q*transpose(A)*b;
-    %% Calculate value of Lasso function
+```
+### Calculate value of Lasso function, value of function phi and its gradient
+```rb    
     function value=value_of_function(A,b,mu,x)
         value=0.5*norm(A*x-b)^2+mu*norm(x,1);
     end
@@ -54,7 +59,9 @@ function x=lasso_GDNM(A,b,mu)
         [prox_y,zeros_index]=prox_of_function(gamma,y,mu);
         grad=Q*y-prox_y+c;
     end
-    %% Find dk, tk at y
+```
+### Find direction dk, step size tk
+```rb
     function dk=finding_dk(A,b,gamma,mu,y)
         grad=finding_gradient(A,b,gamma,mu,y);
         [prox_y,zeros_index]=prox_of_function(gamma,y,mu);
@@ -72,7 +79,9 @@ function x=lasso_GDNM(A,b,mu)
             tau=tau/2;
         end
     end
-    %% Start iterating
+ ```
+ ### Start iterating
+ ```rb
     y=zeros(length(c),1);
     iter=0;
     %while norm(finding_gradient(A,b,gamma,mu,y))>1e-10
@@ -85,3 +94,4 @@ function x=lasso_GDNM(A,b,mu)
     x=Q*y+c;
 end
 ```
+### The whole code can be found in file GDNM.m
