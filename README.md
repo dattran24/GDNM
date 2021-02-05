@@ -90,7 +90,7 @@ end
 ```
 ### The entire code can be found in file GDNM.m
 
-### Let us do a simple example for illustration. In this example, we choose 
+### Let us do a simple example, based on [[kmp20]]{https://arxiv.org/abs/2009.10551} for illustration. In this example, we choose 
 ![image](https://user-images.githubusercontent.com/69850027/107070744-b6e0f300-67b1-11eb-8ab7-5f10f9a7eaa0.png)
 ### The implementations for this are as follows
  ```rb
@@ -99,6 +99,7 @@ b=[104/49;347/49;-649/49;0];
 mu=1/3;
 x=lasso_GDNM(A,b,mu)
 ```
-Reader can find implementation for this example in the link [GDNM Example](http://bit.ly/GDMN_example)
+### Reader can find implementation for this example in the link [GDNM Example](http://bit.ly/GDMN_example)
 ## References
 ### [kmpt21] Khanh, P. D., Mordukhovich, B. S., Phat, V. T., Tran, D. B.: Generalized Damped Newton Algorithms in Nonsmooth Optimization with Applications to Lasso Problems, submitted, https://arxiv.org/abs/2101.10555 
+### [kmp20] Khanh, P. D., Mordukhovich, B. S., Phat, V. T.: A Generalized Newton Method for Subgradient Systems, submitted, https://arxiv.org/abs/2009.10551
