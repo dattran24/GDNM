@@ -15,7 +15,7 @@
 ```rb
 function x=lasso_GDNM(A,b,mu)
 ```
-### For simplicity, we choose \beta=1/2 and \sigma=0.1 Find eigen value and gamma.
+### For simplicity, we choose \beta=1/2 and \sigma=0.1. The choice of y^0 can be found in the iterating step below. Find eigen value and gamma.
 ```rb
     ATA=A'*A;
     gamma=0.5/eigs(ATA,1);
