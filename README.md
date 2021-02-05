@@ -49,12 +49,10 @@ function x=lasso_GDNM(A,b,mu)
     function value=value_of_function(A,b,mu,x)
         value=0.5*norm(A*x-b)^2+mu*norm(x,1);
     end
-    %% Calculate value of phi
     function value_of_phi=phi(A,b,gamma,mu,y)
         [prox_y,zeros_index]=prox_of_function(gamma,y,mu);
         value_of_phi=0.5*transpose(P*y)*y+transpose(c)*y+gamma*mu*norm(prox_y,1)+0.5*norm(y-prox_y)^2;
     end
-    %% Find gradient at y
     function grad=finding_gradient(A,b,gamma,mu,y)
         [prox_y,zeros_index]=prox_of_function(gamma,y,mu);
         grad=Q*y-prox_y+c;
