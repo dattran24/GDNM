@@ -10,7 +10,9 @@
 ```rb
 function x=lasso_GDNM(A,b,mu)
 ```
-### For simplicity, we choose \beta=1/2 and \sigma=0.1. The choice of y^0 can be found in the iterating step below. Find eigen value and gamma.
+### For simplicity, we choose \beta=1/2 and \sigma=0.1. The choice of y^0 can be found in the iterating step below. 
+
+### Find gamma.
 ```rb
     ATA=A'*A;
     gamma=0.5/eigs(ATA,1);
@@ -36,7 +38,6 @@ function x=lasso_GDNM(A,b,mu)
 ```rb
     Q=inv(eye(size(ATA))-gamma*ATA);
     P=Q-eye(size(Q));
-    %% Calulate c
     c=-gamma*Q*transpose(A)*b;
 ```
 ### Calculate value of Lasso function, value of function phi (1) and its gradient (2)
@@ -82,7 +83,9 @@ function x=lasso_GDNM(A,b,mu)
         iter=iter+1
         value=0.5*norm(A*(Q*y+c)-b)^2+mu*norm(Q*y+c,1)
     end
-    %% Translate y to x
+ ```
+### Translate y to x
+ ```rb
     x=Q*y+c;
 end
 ```
