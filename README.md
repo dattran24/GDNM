@@ -11,7 +11,7 @@
 ![h4](https://user-images.githubusercontent.com/69850027/106019826-142dc380-6091-11eb-9c64-55764e3bf446.png)
 
 ### The Matlab code for this algorithm can be found in the file GDNM.m or below.
-
+```rb
 
 function x=lasso_GDNM(A,b,mu)
     %% Find gamma 
@@ -84,3 +84,4 @@ function x=lasso_GDNM(A,b,mu)
     %% Translate y to x
     x=Q*y+c;
 end
+```
