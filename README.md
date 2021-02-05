@@ -90,3 +90,6 @@ function x=lasso_GDNM(A,b,mu)
 end
 ```
 ### The entire code can be found in file GDNM.m
+
+## Reference
+### [kmpt21] Khanh, P. D., Mordukhovich, B. S., Phat, V. T., Tran, D. B.: Generalized Damped Newton Algorithms in Nonsmooth Optimization with Applications to Lasso Problems, submitted, https://arxiv.org/abs/2101.10555 
