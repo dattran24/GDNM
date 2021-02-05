@@ -12,7 +12,7 @@
 
 ### The Matlab code for this algorithm can be found in the file GDNM.m or below.
 
-```rb
+
 function x=lasso_GDNM(A,b,mu)
     %% Find gamma 
     ATA=A'*A;
@@ -84,4 +84,3 @@ function x=lasso_GDNM(A,b,mu)
     %% Translate y to x
     x=Q*y+c;
 end
-```
