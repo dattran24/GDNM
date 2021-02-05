@@ -90,5 +90,7 @@ end
 ```
 ### The entire code can be found in file GDNM.m
 
+### Let us do a simple example for illustration. In this example, we choose 
+![image](https://user-images.githubusercontent.com/69850027/107070525-78e3cf00-67b1-11eb-88e7-684ff33e2be5.png)
 ## References
 ### [kmpt21] Khanh, P. D., Mordukhovich, B. S., Phat, V. T., Tran, D. B.: Generalized Damped Newton Algorithms in Nonsmooth Optimization with Applications to Lasso Problems, submitted, https://arxiv.org/abs/2101.10555 
