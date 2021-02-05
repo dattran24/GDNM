@@ -6,9 +6,8 @@
 
 ![image](https://user-images.githubusercontent.com/69850027/107067063-c3af1800-67ac-11eb-90d3-7023dc8b33dc.png)
 
-![image](https://user-images.githubusercontent.com/69850027/107067150-e04b5000-67ac-11eb-8f58-9f7381a765c8.png)
+![image](https://user-images.githubusercontent.com/69850027/107067345-27394580-67ad-11eb-960b-8b43611a2d8b.png)
 
-![h4](https://user-images.githubusercontent.com/69850027/106019826-142dc380-6091-11eb-9c64-55764e3bf446.png)
 
 ### The Matlab code for this algorithm can be found in the file GDNM.m or below.
 ### Input 
