@@ -101,5 +101,5 @@ x=lasso_GDNM(A,b,mu)
 ```
 ### Reader can find implementations for this example via Octave Online in the link [GDNM Example](http://bit.ly/GDMN_example).
 ## References
-### [kmpt21] Khanh, P. D., Mordukhovich, B. S., Phat, V. T., Tran, D. B.: Generalized Damped Newton Algorithms in Nonsmooth Optimization with Applications to Lasso Problems, submitted, https://arxiv.org/abs/2101.10555 
 ### [kmp20] Khanh, P. D., Mordukhovich, B. S., Phat, V. T.: A Generalized Newton Method for Subgradient Systems, submitted, https://arxiv.org/abs/2009.10551
+### [kmpt21] Khanh, P. D., Mordukhovich, B. S., Phat, V. T., Tran, D. B.: Generalized Damped Newton Algorithms in Nonsmooth Optimization with Applications to Lasso Problems, submitted, https://arxiv.org/abs/2101.10555 
