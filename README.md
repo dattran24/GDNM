@@ -1,6 +1,6 @@
 # Generalized Damped Newton Method for Solving Lasso - GDNM
 
-### In this document, we propose a new algorithm for solving Lasso regession based on our work [[kmpt21]](https://arxiv.org/abs/2101.10555). The Lasso problem is the optimization problem of the form
+### In [[kmpt21]](https://arxiv.org/abs/2101.10555), we propose a new algorithm for solving Lasso regession which is the optimization problem of the form
 ![image](https://user-images.githubusercontent.com/69850027/107066957-9e220e80-67ac-11eb-949e-1e166d81b13c.png)
 ![image](https://user-images.githubusercontent.com/69850027/107067479-55b72080-67ad-11eb-937e-1a5d55cee152.png)
 ![image](https://user-images.githubusercontent.com/69850027/107069564-23f38900-67b0-11eb-8e76-65f5ac3084ee.png)
