@@ -3,6 +3,7 @@
 ### In [[kmpt21]](https://arxiv.org/abs/2101.10555), we propose a new algorithm for solving Lasso regession which is the optimization problem of the form
 ![image](https://user-images.githubusercontent.com/69850027/107838172-8fba9080-6d72-11eb-8126-0d2d833331b7.png)
 ![image](https://user-images.githubusercontent.com/69850027/107838192-a8c34180-6d72-11eb-88a1-987993be94bc.png)
+### The formulation for general proximal mapping also can be found in [[kmpt21]](https://arxiv.org/abs/2101.10555).
 ![image](https://user-images.githubusercontent.com/69850027/107838199-b7115d80-6d72-11eb-9d7f-d395dd5332fa.png)
 ### The Matlab code for this algorithm can be found in the file GDNM.m or below.
 ### Input 
