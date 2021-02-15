@@ -84,7 +84,7 @@ function x=lasso_GDNM(A,b,mu)
         value=0.5*norm(A*(Q*y+c)-b)^2+mu*norm(Q*y+c,1)
     end
  ```
-### Translate y to x
+### Transform y to x
  ```rb
     x=Q*y+c;
 end
