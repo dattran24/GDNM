@@ -4,7 +4,7 @@
 ![image](https://user-images.githubusercontent.com/69850027/107838172-8fba9080-6d72-11eb-8126-0d2d833331b7.png)
 ![image](https://user-images.githubusercontent.com/69850027/107838192-a8c34180-6d72-11eb-88a1-987993be94bc.png)
 ### The formulation for general proximal mapping can be found in [[kmpt21]](https://arxiv.org/abs/2101.10555).
-![image](https://user-images.githubusercontent.com/69850027/111788454-7b4c4500-8896-11eb-9cee-22c666deb545.png)
+![image](https://user-images.githubusercontent.com/69850027/111788732-cb2b0c00-8896-11eb-8b41-d8fdcaac1cd6.png)
 ### The Matlab code for this algorithm can be found in the file GDNM.m or below.
 ### Input 
 ```rb
